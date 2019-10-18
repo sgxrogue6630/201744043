@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width",initial-scale="1">
+    	<title>포토스팟</title>
+    	<link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/PhotoSpot.css">
+    </head>
+    <body>
+    	<style type="text/css">
+    		.jumbotron {
+    			background-image: url('images/jumbotronBackground.jpg');
+    			background-size: cover;
+    			text-shadow: black 0.2em 0.2em 0.2em;
+    			color: white;
+    		}
+    	</style>
+    	<nav class="navbar navbar-default">
+    		<div class="container-fluid">
+    			<div class="navbar-header">
+    				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                      data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    					<span class="sr-only"></span>
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+    				</button>
+    				<a class="navbar-brand" href="index.html">포토스팟</a>
+    			</div>
+    			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">소개<span class="sr-only"></span></a></li>
+                        <li><a href="map.html">스팟</a></li>
+                        <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                              aria-haspopup="true" aria-expanded="false">프로필<span class="caret"></span></a>
+                           <ul class="dropdown-menu">
+                              <li><a href="loginForm.html">로그인</a></li>
+                              <li><a href="registerForm.html">회원가입</a></li>                            
+                           </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="내용을 입력하세요.">
+                        </div>
+                        <button type="submit" class="btn btn-default">검색</button>
+                    </form>                      
+    			</div>
+    		</div>
+    	</nav>	
+    	<div class="container">
+    		<div class="jumbotron">
+    			<h1 class="text-center"> 포토스팟을 소개합니다.</h1>
+    			<p class="text-center">포토스팟은 사진 찍은곳을 모아 사진 찍기 좋은 장소를 소개시켜주는 곳 입니다.</p>
+    			<p class="text-center"><a class="btn btn-primary btn-lg" href="map.html" role="button"> 장소 확인하기</a></p>
+    		</div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>포토스팟의 특징 </h4>
+                    <p>포토스팟은 다른 사이트와 차원이 다른 깔끔한 구성을 보여줍니다. 모든 페이지가 사용자가 접근하고 읽기 쉽게 되어있습니다.</p>
+                    <p><a class="btn btn-default" data-target="#modal" data-toggle="modal">자세히 알아보기</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h4>손쉽게 사용하세요! </h4>
+                    <p>구글맵 기능을 이용해 사진 찍는 지점을 바로 알려드립니다! 이기능은 추후 구현됩니다.</p>
+                    <p><a class="btn btn-default" href="#">자세히 알아보기</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h4>친구들과 바로 공유하세요. </h4>
+                    <p>찍은사진을 바로 공유하세요! 이기능은 추후 구현됩니다.</p>
+                     <p><a class="btn btn-default" href="#">자세히 알아보기</a></p>
+                </div>            
+            </div>
+            <hr>
+    	</div>
+        <footer style="background-color : #000000; color: #ffffff">
+            <div class="container">
+               <br>
+               <div class="row">
+                   <div class="col-sm-2" style="text-align: center;"><h5>Copyright &copy; 2019</h5><h5>김준영(JunYoung Kim)</h5></div>
+                   <div class="col-sm-4"><h4>대표자 소개</h4>저는 포토스팟의 개발자 김준영 입니다.</div>  
+                   <div class="col-sm-3"><h4 style="text-align: center;">SNS</h4>
+                   <div class="list-group">
+                        <a href=https://www.facebook.com/profile.php?id=100004073543234 class="list-group-item">페이스북</a>
+                        <a href=https://www.instagram.com/4generation/ class="list-group-item">인스타그램</a>
+                    </div>
+                </div>           
+               </div>
+            </div>
+        </footer>
+        <div class="row">
+            <div class="modal" id="modal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            포토스팟의 특징
+                            <button class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body" style="text-align: center;">
+                            저희 서비스는 지도상에 포토스팟을 직접 알려줍니다.<br>
+                            이로인해 직관적이고 쉽게 사진 찍을 곳을 알 수 있습니다.<br><br>
+                            <img src="images/pic1.jpg" id="imagepreview" style="width :256px; height: 256px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+    </body>
+</html>
